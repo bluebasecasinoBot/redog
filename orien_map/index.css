@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: rodge;
+    src: url(./fonts/Shine\ Bubble.ttf);
+}
+
+@font-face {
+    font-family: normText;
+    src: url(./fonts/jose.ttf);
+}
+.vid_element
+{
+    height: 500px;
+    min-width: 500px;
+}
+.txtClick{
+    transform:translate(-50% , -50%);
+}
+.click{
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.click:active
+{
+    transform: translate(-50% , -50%) scale(1.05);
+}
+
+@media screen and (max-width:550px) {
+    .vid_element
+    {
+        min-width: 100%;
+        height: 300px;
+    }
+}
+
+.scale_up_down{
+    animation-name:scale_up_down;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale_up_down
+{
+    0%{
+        transform:scale(1);
+    }
+
+    50%
+    {
+        transform:scale(1.1);
+    }
+    100%
+    {
+        transform:scale(1);
+    }
+}
+
+.rotate_z__{
+    animation-name:rotate_z__;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate_z__
+{
+    0%{
+        transform:rotate(0);
+    }
+
+    50%
+    {
+        transform:rotate(180deg);
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+
+.rotate_z{
+    animation-name:rotate_z;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate_z
+{
+    0%{
+        transform:rotate(0);
+    }
+
+    50%
+    {
+        transform:rotate(-180deg);
+    }
+    100%
+    {
+        transform:rotate(-360deg);
+    }
+}
+
+.translateZ_{
+    animation-name:translateZ_;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes translateZ_
+{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%
+    {
+        transform:translateY(-200px);
+    }
+    70%
+    {
+        transform:translateY(100px);
+    }
+}
+
+.translateX_{
+    animation-name:translateX_;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes translateX_
+{
+    0%{
+        transform:translateX(0);
+    }
+
+    20%
+    {
+        transform:translateX(-200px);
+    }
+    50%
+    {
+        transform:translateX(100px);
+    }
+}
+
+.rotateY_{
+    animation-name:rotateY_;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateY_
+{
+    0%{
+        transform:rotate(0);
+    }
+
+    50%
+    {
+        transform:rotate(-180deg);
+    }
+    100%
+    {
+        transform:rotate(-360deg);
+    }
+}
