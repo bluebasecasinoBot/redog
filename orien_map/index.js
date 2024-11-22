@@ -104,6 +104,8 @@ __SYD.container = () =>{
                                     class:"vid_element",
                                     src:"topVid.mp4",
                                     loop:true,
+                                    playsinline:true,
+                                    "webkit-playsinline":true,
                                     // height:"445",
                                     // width:"345",
                                     // autoplay:true,
